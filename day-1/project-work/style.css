@@ -1,0 +1,277 @@
+:root {
+	/* 	
+		:root è comunemente usato per definire variabili CSS globali come di seguito
+		che possono essere accessibili in tutto il documento
+	*/
+	--primary-color: #0060dd;
+	--text-color: #333;
+	--card-bg: rgb(255, 255, 255);
+	--border-radius: 16px;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	background: #f7f7f7;
+	min-height: 100vh;
+	color: var(--text-color);
+}
+
+header {
+	background: var(--primary-color);
+	color: white;
+	padding: 2rem 0;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 2.5em;
+	font-weight: 700;
+}
+
+header p {
+	color: #f9f9f9;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+section {
+	background: var(--card-bg);
+	border-radius: var(--border-radius);
+	border: 1px solid rgb(238, 238, 238);
+	padding: 2rem;
+	margin-bottom: 2rem;
+	transition: all 0.3s ease;
+}
+
+section:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #1e293b;
+	margin-bottom: 1.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+h2 i {
+	color: var(--primary-color);
+	font-size: 24px;
+}
+
+h3 {
+	color: var(--primary-color);
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li {
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 1rem;
+	transition: all 0.2s ease;
+}
+
+ul li:before {
+	content: '▹';
+	color: var(--primary-color);
+	position: absolute;
+	left: 0;
+}
+
+ul li:hover {
+	transform: translateX(5px);
+}
+
+.competenze ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.profile-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 1rem;
+	border: 3px solid white;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact-info {
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}
+
+#contact-info p {
+	margin: 0.3rem 0;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 0 1rem 0 0.7rem;
+	border-radius: 12px;
+}
+#contact-info a {
+	text-decoration: none;
+}
+#contact-info a:hover {
+	text-decoration: underline;
+	text-decoration-color: white;
+	text-underline-offset: 0.2rem;
+}
+
+#contact-info i {
+	color: white;
+}
+
+footer {
+	text-align: center;
+	padding: 2rem;
+	margin-top: 2rem;
+	border-top: 1px solid #ddd;
+}
+
+#social-links {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+#social-links a {
+	color: var(--text-color);
+	font-size: 24px;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+#social-links a:hover {
+	color: var(--primary-color);
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+button,
+.button {
+	background: var(--primary-color);
+	color: white;
+	border: none;
+	padding: 0.8rem 1.5rem;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-family: 'Inter', sans-serif;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+button:hover {
+	background: #004bb0;
+	transform: translateY(-2px);
+}
+
+#contattami form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.form-group label {
+	font-weight: 500;
+	color: #1e293b;
+}
+
+.form-group input,
+.form-group textarea {
+	padding: 0.8rem;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-family: 'Inter', sans-serif;
+	font-size: 1rem;
+	transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+	outline: none;
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 2px rgba(0, 96, 221, 0.2);
+}
+
+.submit-btn {
+	align-self: flex-start;
+	margin-top: 0.5rem;
+	background-color: var(--primary-color);
+	font-weight: 500;
+}
+
+.submit-btn:hover {
+	background-color: #004bb0;
+	transform: translateY(-2px);
+}
+
+@media print {
+	footer,
+	button,
+	#contattami {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	section {
+		padding: 1.5rem;
+	}
+
+	#contact-info {
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.form-group input,
+	.form-group textarea {
+		padding: 0.7rem;
+	}
+
+	.submit-btn {
+		align-self: stretch;
+	}
+}

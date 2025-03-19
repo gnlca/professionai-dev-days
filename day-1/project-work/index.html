@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae di Mario Rossi</title>
+  <!-- Carichiamo un font esterno -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Carichiamo una libreria di icone -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Foglio di stile CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <div id="profile-container">
+      <img src="assets/img/profile.jpg" alt="Mario Rossi" class="profile-image">
+      <h1>Mario Rossi</h1>
+      <p>Full Stack Developer</p>
+      <div id="contact-info">
+        <a href="mailto:mario.rossi@email.com">
+          <p><i class="ri-mail-line"></i> mario.rossi@email.com</p>
+        </a>
+        <p><i class="ri-phone-line"></i> +39 123 456 7890</p>
+        <p><i class="ri-map-pin-line"></i> Milano, Italia</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="riepilogo">
+      <h2><i class="ri-user-line"></i>Riepilogo</h2>
+      <p>Sviluppatore web full-stack con esperienza nella creazione di applicazioni web scalabili e
+        responsive.
+        Specializzato in JavaScript/TypeScript e framework moderni come React e Node.js.
+        Appassionato di UI/UX e performance optimization.</p>
+    </section>
+
+    <section id="esperienza">
+      <h2><i class="ri-briefcase-line"></i>Esperienza Lavorativa</h2>
+      <article>
+        <h3>Web Developer</h3>
+        <p>Digital Solutions srl | Marzo 2018 - Presente</p>
+        <ul>
+          <li>Sviluppo frontend con Vue.js e React per progetti e-commerce</li>
+          <li>Implementazione API RESTful con Node.js e Express</li>
+          <li>Gestione database MongoDB e PostgreSQL</li>
+          <li>Ottimizzazione performance con miglioramento del Core Web Vitals</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="istruzione">
+      <h2><i class="ri-graduation-cap-line"></i>Istruzione</h2>
+      <article>
+        <h3>Laurea in Informatica</h3>
+        <p>Università di Milano | 2015 - 2018</p>
+        <p>Tesi: "Implementazione di architetture microservices con Docker e Kubernetes"</p>
+      </article>
+
+    </section>
+
+    <section id="competenze" class="competenze">
+      <h2><i class="ri-code-line"></i>Competenze</h2>
+      <ul>
+        <li>JavaScript/TypeScript</li>
+        <li>React/Vue.js</li>
+        <li>Node.js/Express</li>
+        <li>HTML5/CSS3/SASS</li>
+        <li>Git/GitHub</li>
+        <li>MongoDB/PostgreSQL</li>
+        <li>Docker/Kubernetes</li>
+        <li>AWS/Netlify</li>
+      </ul>
+    </section>
+
+    <section id="contattami">
+      <h2><i class="ri-mail-send-line"></i>Contattami</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Oggetto</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Messaggio</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn"><i class="ri-mail-send-line"></i> Invia messaggio</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div id="social-links">
+      <a href="https://github.com/mario-rossi" target="_blank"><i class="ri-github-line"></i></a>
+      <a href="https://linkedin.com/in/mario-rossi" target="_blank"><i class="ri-linkedin-line"></i></a>
+      <a href="https://twitter.com/mariorossi" target="_blank"><i class="ri-twitter-x-line"></i></a>
+    </div>
+    <div class="footer-links">
+      <button onclick="window.print()"><i class="ri-printer-line"></i> Stampa CV</button>
+    </div>
+  </footer>
+
+  <!-- Carichiamo lo script JavaScript che gestisce il form di contatto -->
+  <script src="index.js"></script>
+</body>
+
+</html>
