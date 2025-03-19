@@ -13,7 +13,7 @@ Il giorno 2 è dedicato a React e Next.js che ci permetteranno di creare applica
 
 ```
 day-2/
-├──slides.pdf         # Presentazione day 2 intro a React
+├── slides.pdf         # Presentazione day 2 intro a React
 ├── project-work/     # Progetto principale con React e Next.js
 │   ├── step-1/       # Primo step: Replica del progetto CV del day 1 in react
 │   ├── step-2/       # Secondo step: hook useState
@@ -25,7 +25,7 @@ day-2/
 
 Per ciascuno degli step del progetto, dovrai seguire questi passaggi:
 
-### Step 1: Introduzione a React e Next.js
+### Step 1/2/3
 
 1. Naviga nella directory di uno step
 
