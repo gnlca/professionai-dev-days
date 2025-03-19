@@ -2,7 +2,7 @@
 
 ## Introduzione
 
-Benvenuto al primo giorno di ProfessionAI Dev Days!
+Benvenuto al primo giorno dei ProfessionAI Dev Days!
 Questo progetto inizia dalle basi dello sviluppo web, fondamentali per costruire applicazioni che in seguito integreremo con funzionalità di intelligenza artificiale.
 
 ## Panoramica
