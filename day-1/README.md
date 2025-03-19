@@ -28,7 +28,7 @@ day-1/
 
 ```bash
 git clone https://github.com/gnlca/professionai-dev-days.git
-cd dev-days/day-1
+cd professionai-dev-days/day-1
 ```
 
 2. Esplora il progetto principale
@@ -40,9 +40,9 @@ open project-work/index.html    # macOS
 start project-work/index.html   # Windows
 ```
 
-## Project Work: Curriculum Vitae Interattivo
+## Project Work: CV Interattivo
 
-Il progetto principale è un curriculum vitae interattivo che dimostra:
+Il progetto principale è un CV interattivo che dimostra:
 
 - Struttura semantica HTML5
 - Stili CSS moderni con responsive design
